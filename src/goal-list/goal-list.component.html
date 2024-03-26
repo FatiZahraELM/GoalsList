@@ -1,0 +1,14 @@
+<ul>
+@for (goal of goals;track $index){
+    <li>
+
+      {{goal.name}}
+      <button (click)="deleteItem($index)"> Delete</button>
+    
+    </li>  
+
+  }
+  @empty {
+    <p>Empty List</p>
+  }
+</ul>
